@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const projectTrigger = document.getElementById("project-trigger");
     const projectTriggerV2 = document.getElementById("project-trigger-v2");
     const projectOptions = document.querySelectorAll(".custom-project-option");
-    const projectOptionsV2 = document.querySelectorAll(".custom-project-option-v2");
+    const projectOptionsV2 = document.querySelectorAll(
+        ".custom-project-option-v2"
+    );
     const queryType = document.getElementById("query-type");
     const queryTypeV2 = document.getElementById("query-type-v2");
     const projectDropdown = document.getElementById("project-dropdown");
@@ -27,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             projectDropdown.style.display = "none";
         }
-
     }
 
     function handleSelectChangeV2() {
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     queryType.addEventListener("change", handleSelectChange);
     queryTypeV2.addEventListener("change", handleSelectChangeV2);
-
 
     projectOptions.forEach((option) => {
         option.addEventListener("click", function () {
@@ -91,5 +91,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     handleSelectChange();
     handleSelectChangeV2();
-
 });
