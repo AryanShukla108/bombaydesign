@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bombay Design</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="parent-header-div">
+      <div class="header-nav">
+        <div class="logo">LOGO</div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">NRI Area</a></li>
+            <li><a href="#">News & Thoughts</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav2">
+          <!-- <img id="toggle-icon" src="./ham.svg" alt="" /> -->
+          <div id="toggle-icon" class="icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-content" style="display: none">
+      <form>
+        <div class="form-div">
+          <!-- <label for="name">Name</label> -->
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            class="input-new"
+            placeholder="Name"
+          />
+
+          <!-- <label for="email">Email Address</label> -->
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            class="input-new"
+            placeholder="Email Address"
+          />
+
+          <!-- <label for="phone">Mobile Number</label> -->
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            class="input-new"
+            placeholder="Mobile Number"
+          />
+
+          <!-- <label for="query-type">Query Type</label> -->
+          <select
+            id="query-type-v2"
+            name="query-type-v2"
+            class="input-new"
+            onchange="handleSelectChangeV2()"
+          >
+            <option value="">Query Type</option>
+            <option value="projectsv2">Projects</option>
+            <option value="projects">Media</option>
+            <option value="projects">Career</option>
+          </select>
+          <div id="project-dropdown-v2" style="display: none">
+            <div class="custom-project-select-wrapper">
+              <div class="custom-project-select">
+                <div class="custom-project-select-trigger" id="project-trigger">
+                  Select a Project <img src="/drop.svg" alt="" />
+                </div>
+                <div class="custom-project-options">
+                  <span class="custom-project-option" data-value="project1">
+                    Project 1
+                    <span class="tick"><img src="/tick.svg" alt="" /> </span>
+                  </span>
+                  <span class="custom-project-option" data-value="project2">
+                    Project 2
+                    <span class="tick"><img src="/tick.svg" alt="" /></span>
+                  </span>
+                  <span class="custom-project-option" data-value="project3">
+                    Project 3
+                    <span class="tick"><img src="/tick.svg" alt="" /></span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="send-flex">
+          <button type="submit" class="send-all">Send</button>
+        </div>
+      </form>
+    </div>
+    <!-- Main Content Section -->
+
+    <div class="contact-main">
+      <div class="contact-left">
+        <div class="form-container">
+          <div class="contact-us">Contact Us</div>
+          <div class="para-contact">
+            When we aren't changing landscapes, we're making headlines.
+          </div>
+          <div class="send-head">Send us an Enquiry</div>
+          <form>
+            <div class="form-div">
+              <!-- <label for="name">Name</label> -->
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="input-new"
+                placeholder="Name"
+              />
+
+              <!-- <label for="email">Email Address</label> -->
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="input-new"
+                placeholder="Email Address"
+              />
+
+              <!-- <label for="phone">Mobile Number</label> -->
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                class="input-new"
+                placeholder="Mobile Number"
+              />
+
+              <!-- <label for="query-type">Query Type</label> -->
+              <select
+                id="query-type"
+                name="query-type"
+                class="input-new"
+                onchange="handleSelectChange()"
+              >
+                <option value="">Query Type</option>
+                <option value="projects">Projects</option>
+                <option value="projects">Media</option>
+                <option value="projects">Career</option>
+              </select>
+              <div id="project-dropdown" style="display: none">
+                <div class="custom-project-select-wrapper">
+                  <div class="custom-project-select">
+                    <div
+                      class="custom-project-select-trigger"
+                      id="project-trigger"
+                    >
+                      Select a Project <img src="/drop.svg" alt="" />
+                    </div>
+                    <div class="custom-project-options">
+                      <span class="custom-project-option" data-value="project1">
+                        Project 1
+                        <span class="tick"
+                          ><img src="/tick.svg" alt="" />
+                        </span>
+                      </span>
+                      <span class="custom-project-option" data-value="project2">
+                        Project 2
+                        <span class="tick"><img src="/tick.svg" alt="" /></span>
+                      </span>
+                      <span class="custom-project-option" data-value="project3">
+                        Project 3
+                        <span class="tick"><img src="/tick.svg" alt="" /></span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="send-flex">
+                <button type="submit" class="send-all">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="line-middle"></div>
+      <div class="contact-right">
+        <div class="map-info">
+          <div class="map-img">
+            <div class="circle-map"><img src="./mapcircle.svg" alt="" /></div>
+            <!-- <img src="/map.png" alt="" > </img> -->
+          </div>
+
+          <div class="text-info">
+            <div class="p-one">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+            <div class="p-two">
+              +91 000 0000 000 | test1@gmail.com | test2@gmail.com
+            </div>
+
+            <div class="p-three">Sales Enquiry</div>
+            <div class="p-wrap">
+              <div class="p-fore">+91 000 0000 000</div>
+              <div class="p-fore">test1@gmail.com</div>
+            </div>
+
+            <div class="p-three">Redevelopment Centre</div>
+            <div class="p-wrap">
+              <div class="p-fore">+91 000 0000 000</div>
+              <div class="p-fore">test2@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobiledata -->
+    <div class="mobile-enq">
+      <button class="mobile-enq-btn">Send us an Enquiry</button>
+      <div class="mob-enq">
+        <div class="mobile-head">Sales Enquiry</div>
+        <div class="mob-flexs">
+          <div class="moooo">Phone</div>
+          <div class="moooos">+91 000 0000 000</div>
+        </div>
+        <div class="mob-flexs">
+          <div class="moooo">Email</div>
+          <div class="moooos">test1@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="mob-enq">
+        <div class="mobile-head">Sales Enquiry</div>
+        <div class="mob-flexs">
+          <div class="moooo">Phone</div>
+          <div class="moooos">+91 000 0000 000</div>
+        </div>
+        <div class="mob-flexs">
+          <div class="moooo">Email</div>
+          <div class="moooos">test1@gmail.com</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="logo">LOGO</div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">NRI Area</a></li>
+          <li><a href="#">News & Thoughts</a></li>
+          <li><a href="#">Employee Corner</a></li>
+          <li><a href="#">CSR</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <div class="latest">Get the latest news</div>
+        <form>
+          <div class="form-div">
+            <input type="email" placeholder="Enter email" class="mail-fotter" />
+            <button class="Subscribe" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <div class="arrow-parent">
+        <div class="arrow-icon"><img src="./arrow.svg" alt="" /></div>
+        <div class="top">To the top</div>
+      </div>
+    </footer>
+    <div class="down-copy">
+      <div class="down-copy-one">
+        <div class="copy-right">An ISO 9001:2008 Certified Company</div>
+        <div class="copy-right">© copyrights 2019</div>
+        <div><img src="./icon.svg" alt="" /></div>
+      </div>
+    </div>
+
+    <!-- mobile -->
+    <div class="mobile-footer">
+      <div class="newsletter">
+        <div class="latest">Get the latest news</div>
+        <form>
+          <div class="form-div">
+            <input type="email" placeholder="Enter email" class="mail-fotter" />
+            <button class="Subscribe" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">NRI Area</a></li>
+          <li><a href="#">News & Thoughts</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Employee Corner</a></li>
+          <li><a href="#">CSR</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+      <div class="mobile-logo"><div class="logo">LOGO</div></div>
+    </div>
+    <div class="down-copy-2">
+      <div class="down-copy-one">
+        <div class="copy-right">An ISO 9001:2008 Certified Company</div>
+        <div><img src="./icon.svg" alt="" /></div>
+        <div class="copy-right">© copyrights 2019</div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
