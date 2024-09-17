@@ -16,6 +16,21 @@ body {
   height: 100%;
 }
 
+.formshado {
+  box-shadow: 1px 1px 6px 1px #d2d2d2;
+  width: 85%;
+  margin: auto;
+}
+
+.close-small-modal{
+  display: flex;
+  background: white;
+  justify-content: end;
+  padding-top: 13.4px;
+  padding-right: 14.2px;
+  
+}
+
 .parent-header-div {
   height: 112px;
   width: 100%;
@@ -106,12 +121,13 @@ nav ul {
   opacity: 1;
   display: flex;
   font-family: "Museo Slab", serif;
-  gap: 50px;
+  gap: 30px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #3c3c3c;
+  font-size: 13px;
   text-transform: uppercase;
 }
 
@@ -189,7 +205,8 @@ nav ul li a {
 
 .text-info {
   background: transparent;
-  margin-top: 33vh;
+  /* margin-top: 33vh; */
+  margin-top: 45vh;
   width: 479px;
 }
 
@@ -238,7 +255,8 @@ nav ul li a {
   position: absolute;
   top: 0px;
   right: 0;
-  width: 484px;
+  /* width: 484px; */
+  width: 40%;
   height: 683px;
   background: transparent url("/map.png") 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -347,8 +365,9 @@ footer {
 }
 
 .down-copy {
-  padding-right: 100px;
-  padding-left: 100px;
+  padding-right: 51px;
+
+  padding-left: 51px;
   background-color: #f4f4f4;
 }
 
@@ -357,7 +376,8 @@ footer {
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .copy-right {
@@ -648,6 +668,10 @@ footer {
     flex-direction: column;
   }
 
+  .iconsvg {
+    width: 100%;
+  }
+
   .contact-left {
     display: none;
   }
@@ -685,7 +709,7 @@ footer {
   }
 
   .map-img {
-    width: 350px;
+    width: 83%;
     height: 457px;
   }
 
@@ -766,6 +790,7 @@ footer {
     padding-right: 20px;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     /* justify-content: center; */
     /* align-items: center; */
   }
@@ -822,6 +847,27 @@ footer {
     background-image: url("./circle.png");
   }
 
+  /* form1 */
+  .smallformul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 80px;
+    list-style: none;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .mallformli {
+    margin-bottom: 20px;
+  }
+
+  .lia {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* form2 */
   #form-content {
     display: block;
     position: relative;
